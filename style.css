@@ -29,3 +29,10 @@ body {
   width: 250px;
   font-size: 18px;
 }
+
+@media (max-width: 760px) {
+  #emailForm {
+    bottom: 25%;
+    left: 15%;
+  }
+}
