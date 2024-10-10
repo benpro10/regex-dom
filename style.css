@@ -1,0 +1,31 @@
+body {
+  background: rgba(158, 17, 17, 0.429);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#emailForm {
+  width: 300px;
+  height: 350px;
+  background: rgba(138, 54, 54, 0.642);
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  border-radius: 20px;
+  border: solid 1px;
+  box-shadow: -10px 4px 4px 5px rgba(15, 4, 4, 0.749);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+}
+.size{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    width: 250px;
+    font-size: 18px;
+}

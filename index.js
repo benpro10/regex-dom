@@ -20,13 +20,21 @@ function nomValide(inputNom) {
 }
 
 function passwordValide(inputPwd) {
-  let masque = /[A-Z][a-z]{4}\d/;
-  return masque.test(inputPwd);
+  let majuscule = /[A-Z]{1}/;
+  let miniscules = /[a-z]{4}/;
+  let chiffre = /[0-9]{1}/;
+  if (majuscule.test(inputPwd)) {
+    if (miniscules.test(inputPwd)) {
+      if (chiffre.test(inputPwd)) {
+        return true;
+      } else return false;
+    } else return false;
+  } else return false;
 }
 
 function ErreurMessage(erreur) {
   message.style.display = "block";
-  message.style.color = "red";
+  message.style.color = "black";
   message.textContent = erreur;
 }
 
