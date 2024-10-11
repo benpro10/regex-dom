@@ -34,7 +34,7 @@ function passwordValide(inputPwd) {
 
 function ErreurMessage(erreur) {
   message.style.display = "block";
-  message.style.color = "black";
+  message.style.color = "red";
   message.textContent = erreur;
 }
 
