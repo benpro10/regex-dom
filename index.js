@@ -4,20 +4,44 @@ const inputNom = document.querySelector("#nom");
 const inputPwd = document.querySelector("#pwd");
 const message = document.querySelector(".text");
 
+
+/**
+ * 
+ * @param {string} text mail|inputNom|inputPwd 
+ * @returns 
+ */
 function nombreCaractere(text) {
   if (text.length >= 4) return true;
   else return false;
 }
+
+/**
+ * 
+ * @param {string} mail Adresse email
+ * @returns 
+ */
 
 function compteEmailvalide(mail) {
   let masque = /@gmail.com|@yahoo.com/;
   return masque.test(mail);
 }
 
+/**
+ * 
+ * @param {string} inputNom Nom de de l'utilisateur
+ * @returns 
+ */
+
 function nomValide(inputNom) {
   let masque = /^[a-z]*$/;
   return masque.test(inputNom);
 }
+
+/**
+ * 
+ * @param {string} inputPwd Mot de passe
+ * @returns 
+ */
 
 function passwordValide(inputPwd) {
   let majuscule = /[A-Z]{1}/;
@@ -31,6 +55,11 @@ function passwordValide(inputPwd) {
     } else return false;
   } else return false;
 }
+
+/**
+ * 
+ * @param {string} erreur message d'erreur
+ */
 
 function ErreurMessage(erreur) {
   message.style.display = "block";
